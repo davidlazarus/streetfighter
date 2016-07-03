@@ -1,0 +1,129 @@
+html {
+	-webkit-font-smoothing: antialiased;
+  	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+.logo {
+	background: url("..//images/sf_logo.png") no-repeat center center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: block;
+	height: 110px;
+}
+
+.white-container {
+	background-image: url("..//images/bkg2.gif");
+	background-size: 115%;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: -100px;
+	max-width: 1200px;
+	margin-top: 0px;
+	margin-bottom: 110px;
+	height: 500px;
+	position:relative;
+	z-index: 1;
+}
+
+.ryu, .hulk-ryu, {
+	width: 540px;
+	height: 494px; 
+}
+
+.ryu {
+	float: left;
+}
+
+.hulk-ryu {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+	float: right;
+	-webkit-filter: hue-rotate(180deg); 
+}
+
+.ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool, .hulk-ryu-still, .hulk-ryu-ready, .hulk-ryu-throwing, .hulk-ryu-cool {
+	width: 540px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool, .hulk-ryu-ready, .hulk-ryu-throwing, .hulk-ryu-cool {
+	display: none;
+}
+
+.ryu-still, .hulk-ryu-still {
+	background-image: url("../images/ryu-standing-still.png");
+	filter: hue-rotate(90deg);
+}
+
+.ryu-ready, .hulk-ryu-ready {
+	background-image: url("../images/ryu-ready-position.gif");
+}
+
+.ryu-throwing, .hulk-ryu-throwing {
+	background-image: url("../images/ryu-throwing-hadouken.png");
+}
+
+.ryu-cool, .hulk-ryu-cool {
+	background-image: url("../images/ryu-cool.gif");
+}
+
+.hadouken {
+	background-image: url("../images/hadouken.gif");
+	width: 156px;
+	height: 90px;
+	display: none;
+	float: left;
+	position: absolute;
+	z-index: 10;
+	top: 170px;
+	left: 540px;
+}
+
+.hulk-hadouken {
+	background-image: url("../images/hadouken.gif");
+	width: 156px;
+	height: 90px;
+	display: none;
+	float: left;
+	position: absolute;
+	z-index: 10;
+	top: 170px;
+	right: 540px;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.hadouken, .ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool, .hulk-hadouken, .hulk-ryu-still, .hulk-ryu-ready, .hulk-ryu-throwing, .hulk-ryu-cool {
+	background-repeat: no-repeat;
+}
+
+.text-ryu {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -90px;
+	width: 540px;
+	text-align: center;
+	color: white;
+}
+
+.text-ryu > p {
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+
