@@ -87,11 +87,11 @@ $(document).ready(function() {
 			$('.hulk-ryu-ready').show();
 	}});
 
-})
+});
 
 
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();	
-}
+};
